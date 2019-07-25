@@ -15,10 +15,10 @@ app.use(function(req, res, next) {
 // parse application/json
 app.use(bodyParser.json());
 
-app.use(require('/Users/tushmark/Downloads/nodeTraining-master/lms/controllers/authorController.js'));
+app.use(require('controllers/authorController.js'));
 
-app.use(require('/Users/tushmark/Downloads/nodeTraining-master/lms/controllers/publisherController.js'));
-app.use(require('/Users/tushmark/Downloads/nodeTraining-master/lms/controllers/bookController.js'));
+app.use(require('controllers/publisherController.js'));
+app.use(require('controllers/bookController.js'));
 
 app.listen(3000);
 console.log('Server running in port: 3000 ...')

@@ -12,6 +12,7 @@ exports.getPublisherById = function(publisherId,cb){
     });
 };
 
+
 exports.addPublisher = function(publisher, cb){
   db.beginTransaction(function(err){
       if(err) cb(err, null);

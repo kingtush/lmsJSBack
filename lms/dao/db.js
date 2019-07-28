@@ -8,4 +8,5 @@ var connection = mysql.createConnection({
     database : 'lms'
 });
 
+
 module.exports = connection;

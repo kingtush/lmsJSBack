@@ -2,6 +2,7 @@ var routes = require('express').Router();
 var db = require('../dao/db');
 var bookDao = require('../dao/bookDao');
 
+
 routes.get('/books',function(req,res){
     bookDao.getAllBooks(function(error, result){
       if(error) throw error;
